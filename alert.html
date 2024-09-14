@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Emergency Alert System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container alert-container">
+        <h1>Accident Emergency Alert System</h1>
+        <form id="alertForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter description" rows="4" required></textarea>
+            
+            <button type="submit">Send Alert</button>
+        </form>
+
+        <div id="alerts">
+            <h2>Recent Alerts:</h2>
+            <ul id="alertList"></ul>
+        </div>
+    </div>
+    <script src="alerts.js"></script>
+</body>
+</html>
+<style>
+    /* Styles specific to alerts page */
+.alert-container {
+    max-width: 700px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#alerts {
+    margin-top: 30px;
+}
+
+#alertList {
+    list-style: none;
+    padding: 0;
+}
+
+.alert-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+</style>

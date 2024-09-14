@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Emergency Alert System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-section">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+
+        <!-- Emergency Alert Section -->
+        <div class="alert-section">
+            <h1>Accident Emergency Alert System</h1>
+            <form id="alertForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter description" rows="4" required></textarea>
+                
+                <button type="submit">Send Alert</button>
+            </form>
+
+            <div id="alerts">
+                <h2>Recent Alerts:</h2>
+                <ul id="alertList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
